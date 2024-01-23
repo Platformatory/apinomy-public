@@ -7,10 +7,12 @@ description: Unlock new revenue streams from your APIs and Data.
 		<h1 class="editable">Apinomy = API Economy, on steroids</strong></h1>
 		<p class="subtext editable">Unlock new revenue streams from your APIs and Data.</p>
 		<div class="cta button alt"><a href="{{ site.baseurl }}/contact/">Join our private beta program</a></div>
-		<div>
-			<img src="{{ site.baseurl }}/images/dashboard.png" alt="Screenshot" class="screenshot editable" />
+		<div class="play-button-container" onclick="openModal()">
+			<img class="play-button-image" src="{{ site.baseurl }}/images/gateway.png" class="screenshot editable" alt="Play Video">
+			<div class="play-button-overlay"></div>
 		</div>
 	</div>
+	
 </section>
 
 <div class="content">
@@ -21,7 +23,7 @@ description: Unlock new revenue streams from your APIs and Data.
 				<p>Apinomy integrates with Apigee, Kong, AWS API Gateway, Azure API Management to discover APIs directly your platform. You can also plugin your own gateway integration.</p>
 			</div>
 			<div class="image">
-				<img src="{{ site.baseurl }}/images/dashboard.png" alt="Screenshot" class="screenshot editable" />
+				<img src="{{ site.baseurl }}/images/gateway-create.png" alt="Screenshot" class="screenshot editable" />
 			</div>
 		</div>
 	</section>
@@ -33,7 +35,7 @@ description: Unlock new revenue streams from your APIs and Data.
 				<p>Apinomy helps you bundle API endpoints into subscription enabled products with usage-based billing plans as a first class feature. Bill your consumers against API call volumes or even custom service units defined by you.</p>
 			</div>
 			<div class="image">
-				<img src="{{ site.baseurl }}/images/dashboard.png" alt="Screenshot" class="screenshot editable" />
+				<img src="{{ site.baseurl }}/images/billing-plan.png" alt="Screenshot" class="screenshot editable" />
 			</div>
 		</div>
 	</section>
@@ -56,3 +58,30 @@ description: Unlock new revenue streams from your APIs and Data.
 		<div class="button alt"><a href="#">Enlist for our private beta</a></div>
 	</section>
 </div>
+
+<div id="videoModal" class="modal">
+	<div class="modal-content">
+		<div class="close-container"><span class="close" onclick="closeModal()">&times;</span></div>
+		<!-- Embedded YouTube Video -->
+		<iframe class="demo-video" src="https://www.youtube.com/embed/3c-iBn73dDE?si=OORyhERecyfOk3Ng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	</div>
+</div>
+
+<script>
+	function openModal() {
+    document.getElementById('videoModal').style.display = 'block';
+}
+
+// Close the modal
+function closeModal() {
+    document.getElementById('videoModal').style.display = 'none';
+}
+
+// Close the modal if the user clicks outside the modal content
+window.onclick = function (event) {
+    var modal = document.getElementById('videoModal');
+    if (event.target === modal) {
+        closeModal();
+    }
+};
+</script>
