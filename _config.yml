@@ -4,6 +4,7 @@
 title: Apinomy
 url: "https://apinomy.io"
 baseurl:
+auth0url: https://dev-xxojvip7q8vk23p6.us.auth0.com/authorize?client_id=zEXHfSe3jYhnS0Bh18mdBPiHRdPqQGiT&response_type=token id_token&redirect_uri=https://app.apinomy.com&scope=openid profile email&nonce=afeafawfd
 google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname:

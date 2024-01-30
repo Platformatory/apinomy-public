@@ -9,10 +9,11 @@
       link: /contact/
 - links:
     - name: Login
-      link: https://app.apinomy.com
+      # link: https://app.apinomy.com
       new_window: true
     - name: Sign Up
-      link: https://signup.app.apinomy.com
+      # link: 
+      id: signup-button
       new_window: true
     # - name: Docs
     #   link: /

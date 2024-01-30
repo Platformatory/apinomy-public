@@ -1,0 +1,82 @@
+---
+class: signup-container
+---
+
+<div class="signup-main">
+  <div class="signup-details">
+    <div class="signup-context">
+      <h2>Monetize Smarter with Apinomy</h2>
+      <p class="app-intro">
+        Unleash the power of API monetization with Apinomy. Sign up now for
+        innovative solutions, scalable plans, and maximum revenue potential.
+      </p>
+      <div class="social-buttons-mobile">
+        <h3 class="signup-title">Sign Up</h3>
+        {% for connection in site.data.signup %}
+        <a
+          href="{{site.auth0url}}&connection={{connection.connection}}"
+          class="{{connection.class}}"
+        >
+          <img
+            class="connection-logo"
+            alt="{{connection.name}} logo"
+            src="{{site.baseurl}}/images/{{connection.icon}}.png"
+          />
+          Signup with {{connection.name}}
+        </a>
+        {% endfor %}
+      </div>
+      <h3>Why Apinomy?</h3>
+      <p>
+        <strong>Innovative Solutions:</strong> Redefine your API strategy for
+        maximum impact.
+      </p>
+      <p>
+        <strong>Monetization Mastery:</strong> Optimize revenue from your
+        digital assets effortlessly.
+      </p>
+      <p>
+        <strong>Flexible Plans:</strong> From a free Starter Plan to scalable
+        Standard options and custom Enterprise solutions.
+      </p>
+      <h3>What You Get:</h3>
+      <p>
+        <strong>Free Starter Plan:</strong> Test our capabilities with 100K API
+        calls/month.
+      </p>
+      <p>
+        <strong>Standard Plan:</strong> Scale confidently with 10M units/month
+        at $0.01 each. Priority support included.
+      </p>
+      <p>
+        <strong
+          >Enterprise Solutions: Tailored plans with custom pricing, dedicated
+          support, and advanced reporting.</strong
+        >
+      </p>
+      <h3>Join Now for API Success!</h3>
+      <p>
+        Monetize intelligently and elevate your API game. Sign up for Apinomy to
+        unlock revenue streams and stay ahead in the digital landscape. Start
+        your API success story today!
+      </p>
+    </div>
+    <!-- <img src="{{site.baseurl}}/images/apinomy.png" alt="apinomy logo" /> -->
+  </div>
+  <div class="social-buttons">
+    <h3 class="signup-title">Sign Up</h3>
+    {% for connection in site.data.signup %}
+    <a
+      href="{{site.auth0url}}&connection={{connection.connection}}"
+      class="{{connection.class}}"
+    >
+      <img
+        class="connection-logo"
+        alt="{{connection.name}} logo"
+        src="{{site.baseurl}}/images/{{connection.icon}}.png"
+      />
+      Signup with {{connection.name}}
+    </a>
+    {% endfor %}
+  </div>
+</div>
