@@ -21,4 +21,4 @@
 - name: Sign Up
   link: /signup/
   new_window: false
-  highlight: false
+  highlight: true
