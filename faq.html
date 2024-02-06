@@ -4,16 +4,30 @@ title: Apinomy FAQ - Your Questions, Answered
   We've built an amazing, fantastic team of developers, marketers, designers and
   sales people. -->
 faq:
-  - question: What is Apinomy?
-    answer: Apinomy is a platform that specializes in API digital ecosystem monetization. We provide innovative solutions to help businesses maximize the value of their digital assets through effective API strategies.
-  - question: What Plans Does Apinomy Offer?
-    answer: Apinomy offers a range of plans, including a Free Starter Plan with up to 100K API calls per month, a Standard Plan for scalable solutions at $0.01 per unit, and custom Enterprise Solutions for large enterprises.
-  - question: How Can I Contact Apinomy Support?
-    answer: Reach out to our support team via the Contact Us page or by emailing <a href="mailto:hello@platformatory.com">hello@platformatory.com</a> Our dedicated team is ready to assist you with any inquiries or issues.
-  - question: Is Apinomy Suitable for Startups?
-    answer: Absolutely! Our Free Starter Plan is designed for startups and small projects, allowing you to explore our capabilities without any cost.
-  - question: Can I Upgrade or Downgrade My Plan?
-    answer: Yes, you can easily upgrade or downgrade your plan at any time. Our platform is designed to be flexible to accommodate your evolving needs.
+  - question: What is Apinomy and how is it useful?
+    answer: Apinomy enables you to monetize your data and APIs by bundling them into meaningful products and attaching flexible rate plans to it. This enables internal, external and 3rd party developers to subscribe to your products and track their usage bill in near-real time.
+  - question: Can I use Apinomy for internal APIs? (ex. Chargeback)
+    answer: Yes, Apinomy supports monetization of internal APIs and enables you to associate chargeback costs to various teams based on usage.
+  - question: Can I use Apinomy for data monetization and data sharing?
+    answer: Yes, as long as your data can be put behind a proxy which enables access logs and generates metrics. We support a proxy compatible with Postgres wire format
+  - question: What platforms does Apinomy support for monetization?
+    answer: Apinomy currently supports AWS Gateway and Kong gateway providers. But, will soon extend support to other gateway providers like Apigee, Envoy etc. Future versions of Apinomy will also support data monetization around the postgres protocol
+  - question: What models does Apinomy support for monetization?
+    answer: Apinomy supports Fixed Pricing, Graduated Pricing and Volume pricing rate plan models
+  - question: Can I use Apinomy for monetizing APIs (ex; my SaaS service) around custom metrics (ie, not API calls)?
+    answer: Yes, Apinomy allows you to define your custom service units. For example, you could define an API plan to be billed against a custom metric, such as SMS API to be billed against number of messages sent, or a payment transaction to be billed against the value of the transaction.
+  - question: How does Apinomy prevent API subscription overage?
+    answer: Apinomy allows you to set up alerts over near real-time usage statistics to promptly notify users to take action on any over-usage. Note that Apinomy can also send throttling signals to the gateway, if assigned a pre-paid quota.
+  - question: What insights does Apinomy provide?
+    answer: Apinomy automatically tracks revenue data at a subscription, user and company level. You can also look at your top API products, customers and look at developer onboarding and engagement metrics.
+  - question: Is Apinomy an API management platform?
+    answer: No, Apinomy is not an API management platform. Apinomy only integrates with your API Gateways to enable building meaningful business products out of your available APIs
+  - question: Can I use Apinomy with my own gateway?
+    answer: Yes, Apinomy will soon support plugin interfaces to register your own API gateway or appliance. In order to make this work, your gateway will need to support API discovery and logs retrieval
+  - question: Can I use Apinomy with my own developer portal?
+    answer: Yes. You can use our APIs from your own developer portal in order to register users, applications (API keys, credentials) and subscriptions. You can programmatically retrieve real-time billing data and optionally command built-in support for various billing providers.
+  - question: Can I use Apinomy on-premise or on my own cloud?
+    answer: Yes, Apinomy supports on-premise or on my own cloud deployments on demand for a cost. Please reach out to us for more information.
 ---
 
 {% if page.faq %}
